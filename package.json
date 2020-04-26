@@ -1,0 +1,31 @@
+{
+  "name": "cardgame",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test-acceptance": "./node_modules/.bin/mocha \"./library/**/*.a-specs.js\"",
+    "ta": "./node_modules/.bin/mocha \"./gamecore/**/*.a-specs.js\" || true",
+    "dev": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "axios": "^0.19.2",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "dotenv": "^8.0.0",
+    "express": "^4.16.3",
+    "express-basic-auth": "^1.2.0",
+    "express-mongo-db": "^2.0.4",
+    "formidable": "^1.2.1",
+    "mongodb": "^3.1.1",
+    "mongoose": "^5.9.10",
+    "morgan": "^1.9.1",
+    "uuid": "^7.0.3"
+  },
+  "devDependencies": {
+    "mocha": "^7.1.2"
+  }
+}
